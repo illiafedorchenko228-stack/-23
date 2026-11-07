@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#11131d">
+  <title>От Альберта для Полины — мем 67</title>
+  <style>
+    :root{color-scheme:dark;--bg:#11131d;--panel:#1a1e2b;--red:#ff546d;--amber:#ffd36e;--cyan:#78f4df;--ink:#f8f7fb;--muted:#b5b9c9}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 50% 0,rgba(255,84,109,.2),transparent 48%),linear-gradient(150deg,#11131d,#191729 58%,#11131d);overflow-x:hidden}
+    .wrap{width:min(900px,calc(100% - 32px));margin:auto;padding:24px 0 36px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-size:12px;font-weight:850;letter-spacing:.15em;text-transform:uppercase;color:#d6d8e4}.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,211,110,.35);border-radius:999px;color:var(--amber);font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;background:rgba(255,211,110,.06)}.dot{width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 12px var(--amber);animation:pulse 1s infinite alternate}
+    main{padding-top:62px}.hero{text-align:center}.eyebrow{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.22em;text-transform:uppercase}h1{margin:15px auto 0;font-size:clamp(38px,8vw,76px);line-height:.98;letter-spacing:-.065em}.sub{max-width:620px;margin:18px auto 0;color:var(--muted);font-size:16px;line-height:1.7}.mem{position:relative;display:grid;place-items:center;width:min(310px,74vw);aspect-ratio:1;margin:36px auto 24px;border:1px solid rgba(255,84,109,.5);border-radius:50%;background:radial-gradient(circle,rgba(255,84,109,.2),rgba(255,84,109,.04) 55%,transparent 72%);box-shadow:0 0 70px rgba(255,84,109,.14),inset 0 0 40px rgba(255,84,109,.08);animation:alarm 2.2s ease-in-out infinite}.mem::before,.mem::after{content:"";position:absolute;inset:15px;border:1px dashed rgba(255,211,110,.28);border-radius:50%;animation:spin 22s linear infinite}.mem::after{inset:31px;border-color:rgba(120,244,223,.2);animation-direction:reverse}.num{position:relative;z-index:1;font-size:clamp(110px,27vw,190px);font-weight:950;letter-spacing:-.11em;color:transparent;background:linear-gradient(145deg,#fff6d9,var(--amber) 35%,var(--red) 78%);background-clip:text;-webkit-background-clip:text;filter:drop-shadow(0 0 22px rgba(255,84,109,.28));transform:translateX(-.04em)}.orbit-word{position:absolute;top:10px;right:13%;z-index:2;color:var(--cyan);font-size:24px;animation:twinkle 1.6s infinite}.controls{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:26px 0 0}.btn{border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:13px 17px;color:var(--ink);background:rgba(255,255,255,.06);font:inherit;font-weight:800;cursor:pointer;transition:transform .22s,border-color .22s,background .22s}.btn:hover{transform:translateY(-2px);border-color:rgba(120,244,223,.55);background:rgba(120,244,223,.08)}.btn.primary{border:0;color:#211722;background:linear-gradient(110deg,var(--amber),#ff9d78);box-shadow:0 9px 26px rgba(255,111,104,.2)}.notice{max-width:650px;margin:24px auto 0;padding:13px 16px;border:1px solid rgba(255,211,110,.23);border-radius:13px;color:#c9c9d7;background:rgba(255,211,110,.045);font-size:13px;line-height:1.6}.notice strong{color:var(--amber)}
+    .below{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}.card{padding:21px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025))}.card h2{margin:0 0 9px;font-size:18px;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}.upload{display:grid;gap:12px;margin-top:16px}.file{width:100%;padding:12px;border:1px dashed rgba(120,244,223,.35);border-radius:11px;color:#dfe2ed;background:rgba(120,244,223,.035);font:inherit;font-size:12px}.preview{display:none;max-height:250px;width:100%;object-fit:contain;border-radius:12px;background:#0c0e16}.preview.show{display:block}.consent{display:flex;gap:9px;align-items:flex-start;color:#c6c8d5;font-size:12px;line-height:1.5}.consent input{accent-color:var(--cyan);margin-top:2px}.send{justify-self:start}.send:disabled{opacity:.45;cursor:not-allowed;transform:none}.status{min-height:18px;color:var(--cyan);font-size:12px}.foot{margin-top:28px;text-align:center;color:#85899d;font-size:11px;line-height:1.7}.toast{position:fixed;right:18px;bottom:18px;z-index:5;max-width:calc(100% - 36px);padding:12px 15px;border:1px solid rgba(120,244,223,.28);border-radius:12px;background:#1a2030;box-shadow:0 12px 35px #0007;opacity:0;transform:translateY(10px);transition:.3s}.toast.show{opacity:1;transform:translateY(0)}.flash{position:fixed;inset:0;z-index:4;pointer-events:none;background:rgba(255,64,89,.13);opacity:0}.flash.on{animation:flash .55s ease-out}
+    .confetti{position:fixed;top:-15px;z-index:6;width:8px;height:13px;pointer-events:none;animation:fall var(--t) linear forwards}
+    @keyframes pulse{to{opacity:.35;transform:scale(.8)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes twinkle{50%{transform:scale(1.3) rotate(18deg);opacity:.55}}@keyframes alarm{0%,100%{box-shadow:0 0 55px rgba(255,84,109,.13),inset 0 0 36px rgba(255,84,109,.04);transform:scale(1)}50%{box-shadow:0 0 90px rgba(255,84,109,.27),inset 0 0 50px rgba(255,84,109,.12);transform:scale(1.015)}}@keyframes flash{0%{opacity:.9}100%{opacity:0}}@keyframes fall{to{transform:translate3d(var(--dx),110vh,0) rotate(700deg);opacity:.15}}
+    @media(max-width:650px){.wrap{padding-top:17px}.brand{font-size:10px}.badge{font-size:9px;padding:7px 9px}.below{grid-template-columns:1fr;margin-top:36px}main{padding-top:46px}.sub{font-size:14px}.card{padding:18px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="flash" id="flash"></div>
+  <div class="wrap">
+    <header class="top"><div class="brand">ОТ АЛЬБЕРТА · ДЛЯ ПОЛИНЫ</div><div class="badge"><i class="dot"></i> Это мем, не настоящее оповещение</div></header>
+    <main>
+      <section class="hero">
+        <div class="eyebrow">Срочная мем-новость</div>
+        <h1>Полина,<br>внимание!</h1>
+        <p class="sub">Альберт прислал мем <b>67</b>. Повторяем: это дружеская шутка — выдыхай и готовься улыбаться.</p>
+        <div class="mem" aria-label="Мем 67"><span class="orbit-word">✦</span><span class="num">67</span></div>
+        <div class="controls">
+          <button class="btn primary" id="alertButton" type="button">Запустить мем-тревогу 🚨</button>
+          <button class="btn" id="musicButton" type="button" aria-pressed="false">♫ Включить песню</button>
+        </div>
+        <div class="notice"><strong>Важно:</strong> никакой полиции, штрафов или взлома — только мем, анимация и музыка.</div>
+      </section>
+      <section class="below">
+        <article class="card">
+          <h2>Отправить фото Альберту 📸</h2>
+          <p>Полина может сделать снимок камерой или выбрать фото. Сначала появится предпросмотр; отправка произойдёт только после явного подтверждения.</p>
+          <div class="upload">
+            <label for="photoInput" class="btn">📷 Сделать фото или выбрать из галереи</label>
+            <input class="file" id="photoInput" type="file" accept="image/*" capture="user" aria-label="Сделать фото или выбрать изображение">
+            <img class="preview" id="preview" alt="Предпросмотр выбранного фото">
+            <label class="consent"><input id="consent" type="checkbox"><span>Я понимаю, что выбранное фото будет отправлено Альберту, и добровольно этого хочу.</span></label>
+            <button class="btn send" id="sendButton" type="button" disabled>Отправить фото Альберту</button>
+            <div class="status" id="photoStatus" role="status"></div>
+          </div>
+        </article>
+        <article class="card">
+          <h2>Что за тревога? ✨</h2>
+          <p>Это декоративный сигнал для розыгрыша, а не системное или полицейское сообщение. Нажми кнопку, чтобы запустить вспышку, конфетти и мем-момент.</p>
+          <p style="margin-top:13px">Песня запускается только по нажатию кнопки — браузеры не разрешают неожиданное автопроигрывание.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="foot">Сделано для Альберта по-дружески.<br>Не отправляй фото без явного согласия человека.</footer>
+  </div>
+  <audio id="song" src="party-song.mp3" preload="metadata"></audio>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+    const toast=document.getElementById('toast');
+    function say(text){toast.textContent=text;toast.classList.add('show');clearTimeout(say.timer);say.timer=setTimeout(()=>toast.classList.remove('show'),2300)}
+    function confetti(){const colors=['#79f4e5','#ff718d','#ffd36b','#a88dff','#fff4d6'];for(let i=0;i<72;i++){const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=colors[i%colors.length];el.style.borderRadius=Math.random()>.5?'50%':'2px';el.style.setProperty('--t',(2+Math.random()*2.5)+'s');el.style.setProperty('--dx',(Math.random()*160-80)+'px');el.style.animationDelay=(Math.random()*.35)+'s';document.body.appendChild(el);el.addEventListener('animationend',()=>el.remove(),{once:true})}}
+    document.getElementById('alertButton').addEventListener('click',()=>{const f=document.getElementById('flash');f.classList.remove('on');void f.offsetWidth;f.classList.add('on');confetti();say('Мем 67 успешно активирован 🚨')});
+    const song=document.getElementById('song'),music=document.getElementById('musicButton');
+    function setMusic(playing){music.setAttribute('aria-pressed',String(playing));music.textContent=playing?'Ⅱ Пауза':'♫ Включить песню'}
+    music.addEventListener('click',async()=>{if(song.paused){if(song.ended)song.currentTime=0;try{await song.play();setMusic(true)}catch(e){say('Не удалось открыть party-song.mp3')}}else{song.pause();setMusic(false)}});
+    song.addEventListener('ended',()=>setMusic(false));song.addEventListener('pause',()=>setMusic(false));song.addEventListener('play',()=>setMusic(true));
+    const input=document.getElementById('photoInput'),preview=document.getElementById('preview'),consent=document.getElementById('consent'),send=document.getElementById('sendButton'),status=document.getElementById('photoStatus');let photoUrl=null;
+    function updateSend(){send.disabled=!(input.files.length&&consent.checked)}
+    input.addEventListener('change',()=>{if(photoUrl)URL.revokeObjectURL(photoUrl);const file=input.files[0];if(!file){preview.classList.remove('show');status.textContent='';updateSend();return}if(!file.type.startsWith('image/')){status.textContent='Выбери файл изображения.';input.value='';updateSend();return}photoUrl=URL.createObjectURL(file);preview.src=photoUrl;preview.classList.add('show');status.textContent='Предпросмотр готов. Файл остаётся на этом устройстве.';updateSend()});
+    consent.addEventListener('change',updateSend);
+    send.addEventListener('click',async()=>{if(!(input.files.length&&consent.checked))return;const data=new FormData();data.append('photo',input.files[0]);data.append('consent','yes');status.textContent='Отправляю фото…';send.disabled=true;try{const response=await fetch('/api/upload',{method:'POST',body:data});const result=await response.json();if(!response.ok)throw new Error(result.error||'Ошибка отправки');status.textContent='Фото отправлено Альберту. Спасибо!';say('Фото отправлено ✨')}catch(error){status.textContent=error.message==='Failed to fetch'?'Сервер загрузки пока не подключён. Фото не отправлено.':error.message;say('Не удалось отправить фото')}finally{updateSend()}});
+  </script>
+</body>
+</html>
